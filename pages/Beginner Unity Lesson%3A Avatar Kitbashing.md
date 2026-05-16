@@ -1,0 +1,11 @@
+- Kitbashing is a term originally used to describe detailing and combining scale model kits to create something novel
+	- This term has been extended from the physical world into the digital world to describe combining different 3d models together
+- Kitbashing in Unity is a lot more limited compared to Blender, but there still is a lot that can be done
+	- Accessories from one avatar to another
+	- Hair can be transplanted
+	- Entire heads can be swapped
+		- Some special considerations need to be taken to preserve functionality
+			- Avatar descriptor needs to be updated to use the correct eyes and blendshapes
+			- FX layer needs to be modified to preserve facial expressions
+				- The process can be sped up using Avatars 3.0 Manager
+					- Available by default in VCC/ALCOM

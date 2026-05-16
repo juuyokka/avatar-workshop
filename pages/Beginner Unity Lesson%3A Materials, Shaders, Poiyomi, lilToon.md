@@ -1,0 +1,53 @@
+- Assets used
+	- ((6a0805d2-f4a7-491e-a6c0-3682ab03f3ab))
+- Materials are used to define the appearance of a mesh or parts of a mesh
+	- Material slots are defined in the mesh itself
+		- The FBX file contains information on what parts of the mesh share a material slot. This cannot be modified within Unity
+		- When importing an FBX, it may have embedded materials, but they can be overwritten in the scene or in the import settings
+- Materials use shaders to determine the final look of the mesh
+	- A shader is a GPU program that takes in mesh geometry, lighting, textures, and additional input to calculate how to draw the model
+	- Some well known shaders include
+		- Poiyomi has a lot of options and settings, but is packed with features
+		- lilToon has fewer features, but is very high quality and can be more approachable
+		- I personally don't use Mochie, but it is sometimes used or embedded in prefabs, including Fukaziroh's guns
+	- Note that mobile platforms (including Quest) do not support custom shaders. All materials must use shaders from the `VRChat/Mobile` category
+		- These workshops aren't catered for Quest compatibility, however I may cover the `Toon Standard` shader in future lessons
+- Downloads are available for Poiyomi and lilToon, however they also provide VPM repositories for convenient installation and updates with VCC/ALCOM
+	- Poiyomi - https://poiyomi.github.io/vpm/index.json
+	- lilToon - https://lilxyzw.github.io/vpm-repos/vpm.json
+- Some basic concepts that apply to both shaders
+	- Textures
+		- Textures are 2D images that shaders sample to render colors on a model
+		- Not all textures are intended to be used for color. Textures that are used for other purposes are often called maps or masks
+		- Albedo/Main Color - The primary color of the mesh; what most people think of when talking about textures
+		- Mask - Grayscale textures that are used to apply an effect to a specific area instead of the entire material
+		- Normal Map - Encodes additional 3D information to give the illusion of more depth without making the model more detailed. Often used to add small details to hair, cloth, metals, etc.
+	- Reflections
+		- Both Poiyomi and lilToon are toon shaders; they will give models a cel shaded look mimicking a cartoon or anime art style
+			- However, sometimes you want some materials to pop a little more, or mimic real life materials like leather, metal, or gemstones
+		- Both shaders use a PBR (physically based rendering) model to mimic how reflective materials interact with light in real life
+			- In real life all materials reflect light, but reflections can be specular or diffuse
+				- Specular reflections are mirror-like. Incoming light will be reflected at the same angle along the surface
+				- Diffuse reflections will reflect light in all directions
+				- The type and intensity of reflection exhibited is controlled by the smoothness/roughness
+					- For example: a "normal" rough rock vs a smooth shiny river stone
+					- Smoothness can be a scalar value (one number) or it can be a texture map
+			- Some materials will tint the color of light reflected
+				- For example: aluminum foil vs bronze mirror
+				- How much reflected light gets tinted is controlled by the metallic property
+					- Metallic can also be a scalar or a texture map
+	- Outlines
+		- Outlines can be used to make your avatar look more hand drawn
+		- You can configure the color and thickness of the outline
+		- Outlines can also have a fixed size in screen space, meaning they will remain the same thickness regardless of distance to the camera
+		- If your outlines look messed up on a custom model, check your [[Export Settings]] in Blender
+	- Shadows
+		- Shadows are relatively self explanatory, default settings are usually sufficient for most use cases
+		- You can tune how shadows look for a more realistic appearance, but I recommend only doing this for small areas or accessories to keep the overall anime aesthetic the LPD requires
+	- Emissions
+		- Emissions add brightness to the color of a mesh, allowing parts of it to glow
+		- Try not to overdo emissions or you'll end up with an avatar that looks more eboy/egirl than anime
+		- The LPD Avatar Guidelines also stipulate that emissions are only allowed on things that would realistically glow in real life (e.g. glow sticks, radio screens, tritium iron sights)
+- Sources:
+	- https://www.poiyomi.com/shading/reflections-and-specular
+	- https://google.github.io/filament/Materials.html#materialmodels/litmodel

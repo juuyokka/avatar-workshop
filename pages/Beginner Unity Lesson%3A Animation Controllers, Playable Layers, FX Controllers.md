@@ -1,0 +1,46 @@
+- Assets used
+	- ((6a088586-82d9-4b1b-9efe-9aefc67b5301))
+	- ((6a088586-0cad-41d2-a544-26dc776b98f5))
+- Animation Controllers are state machines that determine what Animation Clips to play
+	-
+- Playable Layers are Animation Controllers that VRChat uses for specific purposes
+	- Locomotion/Base
+		- This animates humanoid bones except for hands
+		- As the name implies, it's associated with movement
+		- Typically you will either use VRChat's default Base Layer, or one provided with your base model or GoGoLoco
+	- Additive
+		- This layer is blended with the Base Layer
+		- This can be used to add things like a breathing animation
+		- This layer isn't often used by avatar creators
+	- Gesture
+		- This layer controls hands and fingers
+		- It's used to determine the hand poses for gestures
+	- Action
+		- This layer overrides all previous layers
+		- This is useful for emotes
+	- FX
+		- This layer animates everything else
+		- Facial expressions, object toggles, material swaps, etc. are animated here
+	- You will spend most of your time in the FX layer
+- There are tools that can help debug Playable Layers
+	- Gesture Manager
+	- Avatar 3.0 Emulator
+	- Both of these tools are available by default in VCC/ALCOM
+- After creating your Animation Controller, add any parameters that will be used
+	- Add a new layer, and set the weight to 1
+		- This is a common pitfall; if something doesn't work as expected, check this first!
+	- Add states to your layer
+		- States can be empty, or have motion assigned to them. Motions can be Animation Clips or Blendtrees
+			- Blendtrees will be covered in [[Intermediate Unity Lesson: Blendtrees]]
+		- States can also have additional behaviors attached to them to do more advanced things
+			- More on that in [[Intermediate Unity Lesson: Animator State Behaviors]]
+	- Add transitions between states
+		- Transitions can have a duration and/or conditions
+			- At least one is required, otherwise the transition will be ignored
+			- If you add multiple conditions, all of them must be met for the transition to take place
+			- If you need multiple independent conditions to move between states, use multiple transitions
+- Sources
+	- https://creators.vrchat.com/avatars/playable-layers/
+	- https://vrc.school/docs/Avatars/Playable-Layers/
+	- https://github.com/BlackStartx/VRC-Gesture-Manager
+	- https://github.com/lyuma/Av3Emulator

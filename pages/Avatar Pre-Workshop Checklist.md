@@ -1,0 +1,5 @@
+- VCC/ALCOM installed
+- Unity Hub installed and logged in
+- Unity Editor 2022.3.22f1 installed
+- Blender 5.0 installed with CATS plugin
+- Assets for today downloaded

@@ -1,0 +1,9 @@
+- Workshops are intended to be interactive to allow students to get the most out of their time
+- The goal is for students to learn the skills needed to make avatars that are approvable in the LPD
+	- Therefore we should primarily focus on things people need to get approved
+	- We will primarily use assets that will be relevant to LPD activities
+	- The LPD is primarily a PCVR community so Quest compatibility is a low priority
+- We may offer lessons to the wider LPD community in the future
+	- We need to consider LPD rules and guidelines from the start
+	- That also means we should exclusively use free assets without licensing issues
+	- We may also make our own assets that students may use freely

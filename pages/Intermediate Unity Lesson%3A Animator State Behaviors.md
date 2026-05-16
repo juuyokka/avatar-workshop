@@ -1,0 +1,21 @@
+- State Behaviors are scripts that are executed when an Animator State has been entered
+	- You can add one to any state by clicking the `Add Behavior` button in the inspector while a state is selected in the Animator window
+- There are 7 State Behaviors, though only a few are commonly used
+	- VRC Avatar Parameter Driver
+		- Most commonly used behavior
+		- Can set, add, subtract, copy, or randomize a parameter
+		- Randomization is best done locally on a synced parameter to ensure the same value is set for everybody
+	- VRC Animator Play Audio
+		- This behavior was added to get around the limitations of Audio Sources
+			- Audio Sources in Unity can only have one sound clip
+			- Before this behavior was introduced, you'd need one audio source for every clip you wanted to play
+		- There's quite a few options but this behavior is self explanatory
+		- More on sounds in [[Intermediate Unity Lesson: Audio Sources]]
+	- VRC Animator Tracking Control
+	- VRC Animator Layer Control
+	- VRC Playable Layer Control
+	- VRC Animator Locomotion Control
+	- VRC Animator Temporary Pose Space
+- Sources
+	- https://creators.vrchat.com/avatars/state-behaviors/
+	- https://vrc.school/docs/Avatars/State-Behaviours/

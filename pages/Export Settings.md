@@ -1,0 +1,6 @@
+- Transform
+	- Apply Scalings - FBX All
+- Geometry
+	- Apply Modifiers - Unchecked
+- Armature
+	- Add Leaf Bones - Unchecked

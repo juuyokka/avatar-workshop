@@ -1,0 +1,22 @@
+- Assets used
+	- ((6a088586-82d9-4b1b-9efe-9aefc67b5301))
+	- ((6a088586-0cad-41d2-a544-26dc776b98f5))
+- Without animations, avatars don't do anything
+	- VRChat will automatically assign animations for movement/locomotion, more on that in [[Beginner Unity Lesson: Animation Controllers, Playable Layers, FX Controllers]]
+- Unity operates on Animation Clips
+	- Almost any property you can modify in the inspector can be animated
+		- Transforms (position, rotation, scale)
+		- VRChat Constraints
+		- Blendshapes
+		- GameObject Activity (object toggling)
+- To animate a GameObject, you use the Animation window
+	- Create an Animation Clip
+	- You can add properties to animate with the `Add Property` button or using the record button
+	- It's normal for your avatar to enter a "bicycle pose" while recording
+		- While recording, you can edit any property as you normally would in the inspector
+		- Changes you make will automatically be added in the Animation Clip
+	- Press the record button again to stop recording
+	- If you're still in bicycle pose, click on the "Preview" button to exit preview
+- After creating your animation clip(s), Unity may automatically create and assign an Animaton Controller to your GameObject
+	- If the GameObject is not intended to have one, you can safely delete the Animation Controller and remove the Animator component that was added to your GameObject
+	- If it is intended to have an Animator, open the Animation Controller and delete the state that was added in the default layer

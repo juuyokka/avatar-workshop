@@ -1,0 +1,58 @@
+- Assets used
+	- ((6a088586-82d9-4b1b-9efe-9aefc67b5301))
+	- ((6a088586-0cad-41d2-a544-26dc776b98f5))
+- Toggles are comprised of multiple intersecting components
+	- Expression Parameters
+		- Variables that are stored with your avatar
+		- VRChat provides many built in ones that apply to all avatars
+			- Seated/Upright status
+			- Mute status
+			- Current right and left hand gesture
+			- Visemes
+			- Current movement speed
+		- Parameters can be 3 different data types
+			- | Type | Range | Size |
+			  |------|-------|------|
+			  | Boolean | True or False | 1 bit |
+			  | Integer | 0–255 | 8 bits |
+			  | Float | -1.0–1.0 | 8 bits |
+		- You can set their default value when the avatar is first loaded
+		- You can mark parameters as saved and/or synced
+			- Saved means values are persistent across changing instances
+			- Synced means values are sent to all other players and will remain synced even if your avatar is unloaded or culled
+		- You can have up to 8192 custom parameters and up to 256 synced bits
+	- Expression Menus
+		- Dictates how the controls are presented to the user
+		- Acts as your user interface
+		- Each item has a control type which determines how it sets a parameter
+			- Button
+				- Sets a parameter when clicked and resets it after a short time
+				- Useful for one shot actions like playing an audio clip
+			- Toggle
+				- Sets a parameter when turned on and resets it when turned off
+				- Most commonly used control type
+			- Sub-menu
+				- Menus are limited to 7 items (the 8th spot is reserved for the back button)
+				- Used to organize related controls or to provide "pages"
+				- Sub-menus are created the same way as any other menu
+			- Two axis puppet
+				- Sets two parameters based on the position of the joystick/cursor vertically and horizontally
+				- Fairly niche, pretty limited in application
+			- Four axis puppet
+				- Behaves the same way as the two axis puppet but uses 4 parameters instead of 2
+			- Radial puppet
+				- Sets a parameter based on a "slider"
+				- Goes from 0% to 100%
+				- Value is saved when you close the control
+					- Caveat: the parameter still needs to be marked as saved to persist between instances
+	- Playable Layers
+		- These are what actually respond to changes in parameters
+		- Typically these will be done in the FX layer, but any playable layer can access paramemters
+		- When adding parameters to your Animation Controller, make sure that the spelling and capitalization match your Expression Parameters exactly
+			- The type doesn't have to match, but you want them to match in most cases
+			- There are some cases where you want to purposely mismatch parameter types, but you should learn the rules before you know when to break them
+		- Refer to [[Beginner Unity Lesson: Animation Controllers, Playable Layers, FX Controllers]] on how to set up an Animation Controller
+- Sources
+	- https://creators.vrchat.com/avatars/animator-parameters/
+	- https://creators.vrchat.com/avatars/expression-menu-and-controls
+	- https://vrc.school/docs/Avatars/Expressions-Menu-Params/
