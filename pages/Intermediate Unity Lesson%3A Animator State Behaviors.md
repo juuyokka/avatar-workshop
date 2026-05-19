@@ -12,10 +12,21 @@
 		- There's quite a few options but this behavior is self explanatory
 		- More on sounds in [[Intermediate Unity Lesson: Audio Sources]]
 	- VRC Animator Tracking Control
+		- Used to temporarily disable tracking/IK
+		- Has granular control over which body parts to disable tracking
+		- Used when you need to animate body parts
+		- Tracking will remain disabled until another behavior re-enables it
 	- VRC Animator Layer Control
+		- Used to set the weight of individual layers in a Playable Layer's Animator Controller
 	- VRC Playable Layer Control
+		- Acts the same way as the VRC Animator Layer Control, but for entire Playable Layers
 	- VRC Animator Locomotion Control
+		- Enables or Disables movement via WASD or the joystick
 	- VRC Animator Temporary Pose Space
+		- Sets the view camera to the position of the head
+		- Used to move the camera to a more accurate location
+		- Camera will remain posed until another behavior unsets it
+- We will only cover the VRC Avatar Parameter Driver and VRC Animator Play Audio as the rest of them are quite niche in application
 - Sources
 	- https://creators.vrchat.com/avatars/state-behaviors/
 	- https://vrc.school/docs/Avatars/State-Behaviours/

@@ -4,8 +4,14 @@
 	- Accessories from one avatar to another
 	- Hair can be transplanted
 	- Entire heads can be swapped
-		- Some special considerations need to be taken to preserve functionality
-			- Avatar descriptor needs to be updated to use the correct eyes and blendshapes
-			- FX layer needs to be modified to preserve facial expressions
-				- The process can be sped up using Avatars 3.0 Manager
-					- Available by default in VCC/ALCOM
+- Basic kitbashing is quite easy
+	- Right click on the donor avatar and click `Prefab` > `Unpack`
+	- Identify the root bone of the accessory in the donor's armature and the corresponding skinned mesh
+	- Drag the bone into the recipient's armature and the skinned mesh into the avatar
+		- If this doesn't work, you may need to `Unpack Completely`
+	- Delete the remainder of the donor you don't need
+- Some special considerations need to be taken when head swapping to preserve functionality
+	- Avatar descriptor needs to be updated to use the correct eyes and blendshapes
+	- FX layer needs to be modified to preserve facial expressions
+		- The process can be sped up using Avatars 3.0 Manager
+			- Available by default in VCC/ALCOM

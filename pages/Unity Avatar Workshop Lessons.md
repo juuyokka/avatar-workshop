@@ -18,21 +18,27 @@
 		  :LOGBOOK:
 		  CLOCK: [2026-05-15 Fri 16:53:21]--[2026-05-15 Fri 16:53:22] =>  00:00:01
 		  :END:
-	- NOW [[Beginner Unity Lesson: Avatar Kitbashing]]
+	- [[Beginner Unity Lesson: Avatar Kitbashing]]
 	  :LOGBOOK:
 	  CLOCK: [2026-05-15 Fri 16:53:31]--[2026-05-15 Fri 16:53:32] =>  00:00:01
 	  :END:
+		- TODO pick assets to use
 - Intermediate Unity Workshop
-	- NOW [[Intermediate Unity Lesson: Animator State Behaviors]]
-	- LATER [[Intermediate Unity Lesson: Modular Avatar, VRCFury]]
-		- I honestly know very little about VRCFury, I may have to do more research or consider cutting it out in favor of Modular Avatar
-		- BOOTH assets are dominant in the LPD, as most anime style models are going to be available there, and Japanese creators seem to prefer Modular Avatar
-		- From my experience, VRCFury adds quite a bit of build time which slows down iteration and uploads
-	- LATER [[Intermediate Unity Lesson: Physbones, Colliders, Contacts]]
+	- [[Intermediate Unity Lesson: Animator State Behaviors]]
+		- TODO pick assets to use
 	- LATER [[Intermediate Unity Lesson: Blendtrees]]
+		- This topic is pretty short, I may combine this with Animator State Behaviors
+	- LATER [[Intermediate Unity Lesson: Physbones, Colliders, Contacts]]
+	- NOW [[Intermediate Unity Lesson: VRChat Constraints]]
 	- LATER [[Intermediate Unity Lesson: Audio Sources]]
 	- LATER [[Intermediate Unity Lesson: Particle Systems]]
-	- LATER [[Intermediate Unity Lesson: VRChat Constraints]]
+	- LATER [[Intermediate Unity Lesson: Modular Avatar, VRCFury]]
+	  collapsed:: true
+		- I honestly know very little about VRCFury, I may have to do more research or consider cutting it out in favor of Modular Avatar
+			- BOOTH assets are dominant in the LPD, as most anime style models are going to be available there, and Japanese creators seem to prefer Modular Avatar
+			- From my experience, VRCFury adds quite a bit of build time which slows down iteration and uploads
+		- I also don't want people to lean on either tool too much until they understand the fundamentals, where the utility really shines
+			- I may push it even further back to suit my needs
 - Advanced Unity Workshop
 	- LATER [[Advanced Unity Lesson: Setting up an Avatar from Blender]]
 	- LATER [[Advanced Unity Lesson: Avatar Optimization]]

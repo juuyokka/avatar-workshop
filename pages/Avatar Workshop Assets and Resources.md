@@ -1,5 +1,5 @@
 - Models
-	- Linux Pin #homemade
+	- Linux Pin #accessories #homemade
 	  id:: 6a0805d2-f4a7-491e-a6c0-3682ab03f3ab
 		- Gotta rep the best OS somehow
 		- Comes with an Albedo, Normal, Smoothness, and Metallic map
